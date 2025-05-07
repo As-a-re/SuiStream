@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sui-dark: #121212;
+  --sui-dark-accent: #181818;
+  --sui-blue: #2d91ef;
+  --sui-blue-dark: #1e6fc0;
+}
+
+@layer base {
+  body {
+    @apply bg-sui-dark text-white;
+  }
+
+  /* For Webkit browsers like Chrome/Safari */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For Firefox */
+  .scrollbar-hide {
+    scrollbar-width: none;
+  }
+}
